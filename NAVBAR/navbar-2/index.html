@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mobile.css">
     <title>Nav-bar-2</title>
 </head>
 <body>
@@ -21,7 +22,17 @@
                     <li><a href="#" class="nav-btn">Contacts</a></li>
                 </ul>
             </div>
+            <p class="menu nav-btn">Menu</p>
         </nav>
     </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

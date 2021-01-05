@@ -1,0 +1,21 @@
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+  .menu {
+    display: initial;
+    margin-right: auto;
+  }
+}
