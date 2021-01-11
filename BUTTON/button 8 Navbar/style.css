@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ul li a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #262626;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: white;
+}
+
+/* navbar styling */
+/* ul li a : should have postition set to relative before using it */
+/* .anim-ul should be present in ul of html */
+
+.anim-ul li span {
+  position: absolute;
+  /* width and hieght can be interchange to create new style */
+  width: 25%;
+  height: 100%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  /* change this to create new style */
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: top;
+}
+
+.anim-ul a:hover span {
+  /* change this to create new style */
+  transform: scaleY(1);
+}
+
+.anim-ul span:nth-child(2) {
+  left: 25%;
+  /* you can get hover effect by still not adding other styles below */
+  transition-delay: 0.15s;
+}
+
+.anim-ul span:nth-child(3) {
+  left: 50%;
+  /* you can get hover effect by still not adding other styles below */
+  transition-delay: 0.3s;
+}
+
+.anim-ul span:nth-child(4) {
+  left: 75%;
+  /* you can get hover effect by still not adding other styles below */
+  transition-delay: 0.4s;
+}

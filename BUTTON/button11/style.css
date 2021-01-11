@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}
+
+/* button styling */
+.hover {
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: transparent;
+  font-family: sans-serif;
+  font-size: 2.9rem;
+  border: 3px solid #ff0;
+  padding: 2.5rem 5rem;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.hover:before {
+  content: " hover me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #363636;
+  color: #ff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.hover::after {
+  content: " hover me";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #363636;
+  color: #ff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0) rotateY(0deg);
+  opacity: 0;
+}
+
+.hover:hover:before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+
+.hover:hover:after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
+}

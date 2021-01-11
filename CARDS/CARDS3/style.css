@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card styling */
+.card-container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container img {
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  transition: all 0.5s;
+  transform: translateY(100%);
+}
+
+.card-container:hover .caption {
+  transform: translateY(0);
+}
+
+.card-container:hover img {
+  transform: translateY(-30%);
+}

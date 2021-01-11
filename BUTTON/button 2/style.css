@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button styling */
+.hover {
+  text-decoration: none;
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 2.9rem;
+  border: 3px solid #351435;
+  padding: 2.5rem 5rem;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.hover:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hover:hover:before {
+  transform: translateX(0);
+}
+
+.hover:hover {
+  color: white;
+}
