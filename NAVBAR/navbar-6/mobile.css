@@ -1,0 +1,57 @@
+@media screen and (max-width: 1024px) {
+  .nav-ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    background: #555;
+    /* change transform to generate diff animation */
+    transform: translateY(-150%);
+  }
+
+  .nav-ul li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateY(0%);
+}
+
+/* Hamburger animation */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px);
+}
+
+/* link animation */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

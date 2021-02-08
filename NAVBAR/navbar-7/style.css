@@ -5,37 +5,32 @@
 }
 
 /* navbar */
-#navbar {
-  background-color: #333;
-  color: white;
-  overflow: auto;
-}
-
-.nav-container {
-  margin: auto;
-  max-width: 1200px;
-  overflow: auto;
-  padding: 0 20px;
+nav {
   display: flex;
-  justify-content: space-between;
-  height: 8vh;
+  justify-content: space-around;
   align-items: center;
-  background: #333;
+  min-height: 8vh;
+  background-color: #333;
 }
 
-.nav-ul {
+.logo {
+  color: rgb(240, 240, 240);
+  font-size: 20px;
+}
+
+.nav-links {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
-.nav-ul li {
-  list-style-type: none;
+.nav-links li {
+  list-style: none;
 }
 
-.nav-ul li a {
+.nav-links a {
+  color: rgb(240, 240, 240);
   text-decoration: none;
-  color: white;
 }
 
 .burger div {
@@ -45,7 +40,6 @@
   margin: 5px;
   transition: all 0.3s ease;
 }
-
 .burger {
   display: none;
 }
