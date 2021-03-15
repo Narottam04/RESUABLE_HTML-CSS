@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>contact us</title>
+  </head>
+  <body>
+    <section class="contact">
+      <div class="contact-heading">
+        <h1>Get In Touch</h1>
+        <p>It is very important for us to keep in touch with you,</p>
+        <p>
+          So we are always ready to answer any question that interests
+          you.Shoot!
+        </p>
+      </div>
+      <div class="contact-us">
+        <div class="box-left">
+          <div class="address">
+            <h2>Address</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              praesentium repellat amet laudantium? Pariatur nemo sunt,
+              praesentium animi a velit maxime sit accusamus dolorum iste
+              ratione modi! Accusamus, sed dolores!
+            </p>
+          </div>
+          <div class="email">
+            <h2>Email</h2>
+            <p>jondoe@gmail.com</p>
+          </div>
+          <div class="phone">
+            <h2>Phone</h2>
+            <p>12345678901</p>
+          </div>
+        </div>
+        <!-- form -->
+        <div class="box-right">
+          <form
+            class="gform pure-form pure-form-stacked"
+            method="POST"
+            data-email="tenthnarottam@gmail.com"
+            action="https://script.google.com/macros/s/AKfycbx7_5H51tgmTm4B2q38lgly1puI-hCEw6pX3tl-31q39zqRfAxXu1zg7lCX4oAh7f5P/exec"
+          >
+            <!-- change the form action to your script url -->
+
+            <div class="form-elements">
+              <fieldset class="pure-group form-control">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Name"
+                  required
+                  autocomplete="off"
+                />
+              </fieldset>
+
+              <fieldset class="pure-group form-control">
+                <label for="email"> Email </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value=""
+                  required
+                  placeholder="Enter your Email"
+                  autocomplete="off"
+                />
+                <span class="email-invalid" style="display: none">
+                  Must be a valid email address</span
+                >
+              </fieldset>
+
+              <fieldset class="pure-group contact-msg">
+                <label for="message">Message: </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="10"
+                  required
+                  autocomplete="off"
+                ></textarea>
+              </fieldset>
+
+              <button class="submit-btn">Submit</button>
+            </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display: none">
+              <h2>
+                <em>Thanks</em> for contacting us! We will get back to you soon!
+              </h2>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

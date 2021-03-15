@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* footer */
+.footer {
+  background-color: #333;
+  /* for navbar sticking to bottom */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  /* setting the value of the container */
+  max-width: 1200px;
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+  background-color: #333;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+#footer-container h3 {
+  color: white;
+  padding: 1rem 0 1rem 0;
+  text-align: left;
+}
+
+#footer-container p {
+  color: white;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+#footer-container i {
+  color: white;
+  padding-top: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials i {
+  margin-right: 0.75rem;
+}
+
+#social-h3 {
+  margin-left: 1rem;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+}
+
+.column2 {
+  margin-left: 5rem;
+}
+
+.column3 {
+  margin-left: 5rem;
+}
+
+.column4 {
+  margin-left: 5rem;
+}
+
+.socials a {
+  padding: 0 0.3rem 0 0.3rem;
+}
+
+.copyright-footer {
+  background-color: #333;
+  color: white;
+  /* for navbar sticking to bottom */
+  position: fixed;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* mobile styling */
+@media screen and (max-width: 768px) {
+  .column1 {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .column2 {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .column3 {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .column4 {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .column5 {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .socials i {
+    margin-right: 0;
+  }
+
+  #social-h3 {
+    margin-left: 0.2rem;
+  }
+
+  #footer-container h3 {
+    color: white;
+    padding: 1.5rem 0 0.5rem 0;
+  }
+}

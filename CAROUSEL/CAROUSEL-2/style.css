@@ -1,0 +1,47 @@
+/* carousel */
+.glider-contain {
+  max-width: 100%;
+  position: relative;
+}
+
+.glider-contain img {
+  width: 100%;
+}
+
+.glider {
+  /* to change the height of carousel */
+  height: 80vh;
+}
+
+.glider-contain .glider-prev,
+.glider-contain .glider-next {
+  position: absolute;
+  top: 50%;
+}
+
+.glider-contain .glider-prev {
+  left: 8px;
+}
+
+.glider-contain .glider-next {
+  right: 8px;
+}
+
+.glider-contain i {
+  color: rgb(224, 224, 224);
+}
+
+/* mobile css */
+@media (max-width: 768px) {
+  .glider {
+    /* to change the height of carousel */
+    height: 30vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .glider {
+    /* to change the height of carousel */
+    height: 50vh;
+  }
+}

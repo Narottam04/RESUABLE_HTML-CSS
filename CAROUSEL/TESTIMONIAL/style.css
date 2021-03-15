@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+figure {
+  background-color: rgb(221, 221, 221);
+  display: block;
+  margin: 1.5em;
+  padding: 0.7em;
+  height: 50vh;
+}
+
+blockquote {
+  padding: 0.5em;
+}

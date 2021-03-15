@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* contact us page */
+
+.contact-heading h1 {
+  font-size: 3rem;
+  padding-bottom: 0.3rem;
+}
+
+.contact-heading p {
+  line-height: 1.3rem;
+  font-weight: 550;
+}
+
+.contact-heading {
+  margin: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-around;
+}
+
+.contact-us .box-left {
+  flex: 1;
+  margin: 0 10rem 0;
+  padding-left: 2rem;
+}
+
+.contact-us .box-right {
+  flex: 1;
+  margin: 0 15rem 0 0;
+  padding-left: 2rem;
+}
+
+.box-left p {
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #111;
+}
+
+.box-left h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+/* form */
+.form-control {
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-control input {
+  border: 2px solid #d6d5d5;
+  outline: none;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  margin-top: 5px;
+}
+
+.contact-msg {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-msg textarea {
+  border: 2px solid #d6d5d5;
+  outline: none;
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+}
+
+.submit-btn {
+  background-color: lightblue;
+  border: 2px solid lightblue;
+  color: white;
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}

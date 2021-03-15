@@ -1,0 +1,44 @@
+/* contact form mobile view */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact-us {
+    display: block;
+  }
+  .contact-us .box-right {
+    margin: 0 10rem 0;
+    padding-left: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-heading h1 {
+    font-size: 2rem;
+  }
+
+  .contact-heading p {
+    line-height: 1.6rem;
+    text-align: center;
+  }
+
+  .contact-heading {
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .contact-us {
+    display: block;
+  }
+
+  .contact-us .box-right {
+    margin: auto;
+    margin-top: 3rem;
+    padding-left: 0;
+  }
+
+  .contact-us .box-left {
+    margin: 0;
+    margin-top: 3rem;
+    padding-left: 0;
+  }
+}

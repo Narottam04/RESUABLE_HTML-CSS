@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* hero section */
+.hero-sec {
+  background-image: url(../IMAGES/hero-section/hero-img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* change the height to cover the whole page */
+  height: 65vh;
+}
+
+.hero-sec h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.hero-sec p {
+  text-align: center;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.hero-sec .hero-btn {
+  padding: 1rem 2rem 1rem 2rem;
+  text-decoration: none;
+  background: aquamarine;
+  color: white;
+  border-radius: 5rem;
+}
+
+.hero-sec a {
+  color: #333;
+  padding: 0 2rem 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-sec p {
+    text-align: center;
+  }
+
+  .hero-sec h1 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,47 @@
+/* our clients */
+.logo-showcase-container {
+  max-width: 100%;
+  height: 50vh;
+  margin: 2rem auto;
+  /* box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4); */
+  position: relative;
+}
+
+#our-clients h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 0.3rem;
+}
+
+.logo-showcase .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.logo-showcase img {
+  width: 100px;
+  margin: 3rem;
+}
+
+.logo-showcase-container .dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.logo-showcase-container .glider-prev,
+.logo-showcase-container .glider-next {
+  position: absolute;
+  top: 35%;
+}
+
+.logo-showcase-container .glider-prev {
+  left: 8px;
+}
+
+.logo-showcase-container .glider-next {
+  right: 8px;
+}
