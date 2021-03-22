@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* section */
+#section-content {
+  max-width: 1200px;
+  overflow: auto;
+  margin: auto;
+  display: flex;
+}
+
+.content-right {
+  flex: 1;
+}
+.content-right img {
+  width: 500px;
+  height: 300px;
+  margin-left: 5rem;
+}
+
+@media (max-width: 768px) {
+  #section-content {
+    flex-direction: column;
+  }
+  .content-right {
+    margin: auto;
+  }
+
+  .content-right img {
+    margin-left: 0rem;
+    width: 400px;
+    height: 250px;
+  }
+}

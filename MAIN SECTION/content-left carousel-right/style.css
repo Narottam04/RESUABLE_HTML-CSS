@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* section */
+#section-content {
+  max-width: 1500px;
+  overflow: auto;
+  margin: auto;
+  display: flex;
+}
+
+.content-right {
+  width: 60%;
+  height: 70%;
+}
+/* carousel */
+.swiper-container {
+  width: 70%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #section-content {
+    flex-direction: column;
+  }
+  /* For hiding the navbar on mobile view */
+  /* .content-right {
+    display: none;
+  } */
+  .content-right {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    width: 900px;
+    height: 300px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
+}
